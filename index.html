@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Selamat Ulang Tahun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">satu tahun lagi telah dilalui</p>
+      <h1 class="hero-title">Selamat<br>Ulang Tahun<span class="hero-name" data-editable>Sarah</span></h1>
+      <p class="hero-sub">semoga senja hari ini seindah tahun yang menanti</p>
+    </div>
+    <button class="scroll-cue" id="scrollCue" aria-label="gulir ke bawah">
+      <span></span>
+    </button>
+  </section>
+
+  <!-- GIFT -->
+  <section class="gift-section">
+    <div class="glow"></div>
+    <p class="gift-label" id="giftLabel">ada satu kado kecil untukmu</p>
+
+    <button class="gift-box" id="giftBox" aria-label="buka kado">
+      <img src="kado.png" alt="kado" class="gift-img" />
+      <span class="burst-ring"></span>
+    </button>
+
+    <div class="message-card" id="messageCard">
+      <div class="message-inner">
+        <p class="message-quote">&ldquo;</p>
+        <p class="message-text" data-editable>
+          Terima kasih sudah jadi orang yang selalu bikin hari-hari terasa lebih hangat.
+          Di umur yang baru ini, semoga semua rencana yang kamu simpan diam-diam
+          pelan-pelan jadi nyata. Selamat ulang tahun — aku ikut senang merayakannya.
+        </p>
+        <p class="message-from" data-editable>— dari seseorang yang peduli</p>
+
+        <div class="gift-photos">
+          <figure class="gift-photo gp1">
+            <img src="img1.jpg" alt="foto kenangan 1" onerror="this.parentElement.classList.add('is-placeholder')" />
+            <span class="placeholder-hint">assets/gift/1.jpg</span>
+          </figure>
+          <figure class="gift-photo gp2">
+            <img src="img2.jpg" alt="foto kenangan 2" onerror="this.parentElement.classList.add('is-placeholder')" />
+            <span class="placeholder-hint">assets/gift/2.jpg</span>
+          </figure>
+          <figure class="gift-photo gp3">
+            <img src="img3.jpg" alt="foto kenangan 3" onerror="this.parentElement.classList.add('is-placeholder')" />
+            <span class="placeholder-hint">assets/gift/3.jpg</span>
+          </figure>
+        </div>
+      </div>
+      <button class="replay-btn" id="replayBtn">bungkus lagi</button>
+    </div>
+  </section>
+
+  <div class="confetti-layer" id="confettiLayer"></div>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <p class="eyebrow gallery-eyebrow">bonus dari dalam kado</p>
+    <h2 class="gallery-title">beberapa kilas balik</h2>
+    <p class="gallery-sub" data-editable>ganti gambar di bawah ini dengan foto kalian sendiri</p>
+
+    <div class="gallery-grid">
+      <figure class="polaroid p1">
+        <div class="polaroid-frame">
+          <img src="img1.jpg" alt="foto 1" onerror="this.parentElement.classList.add('is-placeholder')" />
+          <span class="placeholder-hint">assets/gallery/1.jpg</span>
+        </div>
+        <figcaption data-editable>caption foto satu</figcaption>
+      </figure>
+
+      <figure class="polaroid p2">
+        <div class="polaroid-frame">
+          <img src="img2.jpg" alt="foto 2" onerror="this.parentElement.classList.add('is-placeholder')" />
+          <span class="placeholder-hint">assets/gallery/2.jpg</span>
+        </div>
+        <figcaption data-editable>caption foto dua</figcaption>
+      </figure>
+
+      <figure class="polaroid p3">
+        <div class="polaroid-frame">
+          <img src="img3.jpg" alt="foto 3" onerror="this.parentElement.classList.add('is-placeholder')" />
+          <span class="placeholder-hint">assets/gallery/3.jpg</span>
+        </div>
+        <figcaption data-editable>caption foto tiga</figcaption>
+      </figure>
+
+      <figure class="polaroid p4">
+        <div class="polaroid-frame">
+          <img src="img4.jpg" alt="foto 4" onerror="this.parentElement.classList.add('is-placeholder')" />
+          <span class="placeholder-hint">assets/gallery/4.jpg</span>
+        </div>
+        <figcaption data-editable>caption foto empat</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>dibuat dengan hangat, untuk dibaca pelan-pelan</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
