@@ -11,7 +11,7 @@
 </head>
 <body>
  
- <audio id="music1.mp3" src="music.mp3" loop></audio>
+ <audio id="bgMusic" src="music.mp3" loop></audio>
 
   <!-- HERO -->
   <section class="hero">
@@ -116,7 +116,7 @@
 <script src="script.js"></script>
  <script>
 document.addEventListener('click', function startMusic() {
-  const music = document.getElementById('music1');
+  const music = document.getElementById('bgMusic');
   if (music && music.paused) {
     music.play();
   }
