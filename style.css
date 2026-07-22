@@ -35,7 +35,7 @@ body{
 .hero-bg{
   position:absolute;
   inset:0;
-  background-image:url('assets/sunset.jpg');
+  background-image:url('sunset.jpg');
   background-size:cover;
   background-position:center 30%;
   transform:scale(1.08);
